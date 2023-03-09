@@ -1,0 +1,45 @@
+#proyects{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    gap: 1.5rem;
+    background-color: rgb(165, 201, 202);
+}
+
+
+.work{
+    display: flex;
+    width: auto;
+    height: auto;
+    border-radius: 2rem;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+#work1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    
+}
+
+#work2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+@media (max-width: 768px){
+    #proyects{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #presentation article{
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+    }
+}

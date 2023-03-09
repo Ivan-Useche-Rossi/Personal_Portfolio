@@ -1,0 +1,41 @@
+#encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    gap: 1rem;
+    background-color: rgb(44, 51, 51);
+    width: 100%;
+    padding: 0 1rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#name1{
+    font-size: 20pt;
+    font-weight: 700;
+    margin-top: 1rem;
+    flex: 1;
+    color: snow;
+}
+
+#links a{
+    flex: 1;
+    text-align: center;
+    color: snow;
+    padding: 1rem 0.5rem;
+    border-radius: 2rem;
+}
+
+@media (max-width: 768px){
+    #encabezado{
+        flex: 0;
+        padding: 1rem 2rem;
+    }
+
+    #name{
+        align-items: flex-start;
+        text-align: left;
+    }
+}

@@ -1,0 +1,55 @@
+#presentation{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+}
+
+#presentation article{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+    text-align: center;
+}
+
+#name2{
+    font-size: 4rem;
+    line-height: 5rem;
+
+}
+
+#presentation picture{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#presentation picture img{
+    object-fit: cover;
+}
+
+#presentation article a{
+    background-color: rgb(44, 51, 51);
+    align-self: center;
+    padding: 1rem 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 2rem;
+}
+
+@media (max-width: 768px){
+    #presentation{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #presentation article{
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+    }
+}
